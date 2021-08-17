@@ -1,0 +1,30 @@
+body {
+    background-color: lightsalmon;    
+}
+
+h1 {
+    color: beige;
+    text-align: center;
+}
+
+.drawingArea {
+    margin: auto;
+    border: 5px solid beige;
+    width: 500px;
+    height: 500px;
+    border-radius: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items:stretch;
+
+}
+
+.pixel {
+    flex: 1 1 auto;
+    flex-basis: 6.25%;
+    border-width: 0px;
+    margin: 0px;
+    padding:0px;
+
+}
