@@ -1,7 +1,6 @@
 let drawingArea = document.querySelector('.drawingArea');
 
 
-
 function createOneSixGrid() {
 
     let oneSix = document.createElement('div'); 
@@ -22,6 +21,9 @@ function createOneSixGrid() {
 createOneSixGrid();
 
 
+
+
+
 function draw(e) {
     e.target.style.cssText = "background-color: black";
 }
@@ -29,4 +31,23 @@ function draw(e) {
 
 let allPixels = document.querySelectorAll('.pixel');
 allPixels.forEach(pixel => pixel.addEventListener("mouseenter", draw));
+
+
+
+
+
+
+
+
+
+
+function clearGrid() {
+    allPixels.forEach(pixel => pixel.style.cssText = "background-color: ");
+}
+
+
+let clearBtn = document.querySelector('.clearButton');
+clearBtn.addEventListener('click', clearGrid);
+
+
 

@@ -7,8 +7,25 @@ h1 {
     text-align: center;
 }
 
+
+.ui {
+    text-align: center;
+    position: relative;
+}
+
+.clearButtonDiv {
+    display:block;}
+
+}
+
+.gridResDiv {
+    display:block;}
+
+.gridResInput .gridResBtn {
+}
+
 .drawingArea {
-    margin: auto;
+    display: inline-block;    
     border: 5px solid beige;
     width: 500px;
     height: 500px;
