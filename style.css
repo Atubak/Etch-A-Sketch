@@ -14,14 +14,15 @@ h1 {
 }
 
 .clearButtonDiv {
-    display:block;}
+    display:block;
+    margin: 20px;
 
 }
 
 .gridResDiv {
-    display:block;}
+    display:block;
+    margin: 50px;
 
-.gridResInput .gridResBtn {
 }
 
 .drawingArea {
@@ -34,6 +35,15 @@ h1 {
 }
 
 .oneSix {
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+
+}
+
+.grid {
     width: 500px;
     height: 500px;
     display: grid;
