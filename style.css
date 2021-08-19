@@ -57,3 +57,22 @@ h1 {
     margin: 0px;
     padding:0px;
 }
+
+.colorDiv {
+    display:block;
+    margin: 30px 45%;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.colorBtn {
+    border-style: none;
+    border-radius: 7px;
+    text-decoration: wavy;
+    color: white;
+    background-color: black;
+}
+
+button {
+    cursor: pointer;
+}

@@ -25,7 +25,8 @@ createOneSixGrid();
 
 
 function draw(e) {
-    e.target.style.cssText = "background-color: black";
+    e.target.style.cssText = "background-color: rgb(0, 0, 0";
+
 }
 
 
@@ -110,3 +111,29 @@ function newInputtedGrid() {
 
 let gridResBtn = document.querySelector('.gridResBtn');
 gridResBtn.addEventListener('click', newInputtedGrid);
+
+
+
+
+
+function drawColorful() {
+    let allPixels = document.querySelectorAll('.pixel');
+
+    allPixels.forEach(pixel => pixel.addEventListener('mouseenter', colorPixels));
+
+
+}
+
+
+function colorPixels(e) {
+    e.target.style.cssText = `background-color: rgb(${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}, ${Math.floor(Math.random()*255)}`;
+}
+
+
+let colorBtn = document.querySelector('.colorBtn');
+colorBtn.addEventListener('click', drawColorful);
+
+colorBtn.addEventListener('mouseenter', colorPixels);
+
+let colorDiv = document.querySelector('.colorDiv');
+colorDiv.addEventListener('mouseenter', colorPixels);
