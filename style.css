@@ -2,9 +2,10 @@ body {
     background-color: lightsalmon;    
 }
 
-h1 {
+h1, p {
     color: beige;
     text-align: center;
+    text-shadow: 1px 1px 3px black;
 }
 
 
